@@ -16,12 +16,4 @@ jobs:
       - name: Cypress tests
         env:
           CYPRESS_WHISKER_URL: ${{ vars.CYPRESS_WHISKER_URL }}
-        run: |
-          echo $CYPRESS_WHISKER_URL
-
-      - name: Cypress tests
-        env:
-          CYPRESS_WHISKER_URL: ${{ vars.CYPRESS_WHISKER_URL }}
         uses: cypress-io/github-action@v5
-        with:
-          build: npx cypress info
