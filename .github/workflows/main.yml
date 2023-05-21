@@ -5,8 +5,8 @@ on:
     branches:
       - 'main'
   workflow_dispatch:
-  schedule:
-    - cron: '* 16 * * *'
+  #schedule:
+  #  - cron: '* 16 * * *'
 
 jobs:
   whisker-test:
